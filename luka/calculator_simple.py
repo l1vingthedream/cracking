@@ -1,7 +1,8 @@
 print("Welcome to calculator!\nPlease enter the operation [1-4]:")
 
 while True:
-    op = int(input("[1] Addition\n[2] Subtraction\n[3] Multiplication\n[4] Division\n[5] EXIT\n"))
+    op = int(input('[1] Addition\n[2] Subtraction\n[3]'
+                   'Multiplication\n[4] Division\n[5] EXIT\n'))
     if op == 5:
         print("exiting...")
         quit()
@@ -16,8 +17,7 @@ while True:
         answer = firstNumber - secondNumber
     if op == 3:
         answer = firstNumber * secondNumber
-    if op == 4: 
+    if op == 4:
         answer = firstNumber / secondNumber
 
-
-    print (answer)
+    print(answer)
