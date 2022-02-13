@@ -1,15 +1,16 @@
 ''' Implement an algorithm to determine if a string has all unique characters. 
 What if you cannot use additional data structures?
 '''
-def isUnique(word):
-    charmap = {}
+from ast import Str
+import string
+
+def isUnique(word: str) -> bool:
+    charCount: dict[str,int] = {}
     for c in word:
-        charmap[c] = charmap.get(c, 0) + 1
-    for el in charmap:
-        if charmap[el] > 1:
+        if c in charCount:
             return False
+        charCount[c] = 1
     return True
 
-str = input("Enter word: ")
-print("Does the word consist of unique characters...")
-print(isUnique(str))
+userEntry = input("Enter word: ")
+print(str(isUnique(userEntry)))
