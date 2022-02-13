@@ -1,8 +1,6 @@
 ''' Implement an algorithm to determine if a string has all unique characters. 
 What if you cannot use additional data structures?
 '''
-from ast import Str
-import string
 
 def isUnique(word: str) -> bool:
     charCount: dict[str,int] = {}
