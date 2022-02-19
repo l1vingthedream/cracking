@@ -3,7 +3,7 @@ def swap4(
         i: int,
         j: int,
         rows: int) -> None:
-    backup                   = _arr[i][j] 
+    backup: int              = _arr[i][j] 
     _arr[i][j]               = _arr[rows-j-1][i]        #top
     _arr[rows-j-1][i]        = _arr[rows-i-1][rows-j-1] #left
     _arr[rows-i-1][rows-j-1] = _arr[j][rows-i-1]        #bott
