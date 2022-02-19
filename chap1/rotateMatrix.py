@@ -2,8 +2,7 @@ def swap4(
         _arr: list[list[int]],
         i: int,
         j: int,
-        rows: int,
-        cols: int) -> None:
+        rows: int) -> None:
     backup                   = _arr[i][j] 
     _arr[i][j]               = _arr[rows-j-1][i]        #top
     _arr[rows-j-1][i]        = _arr[rows-i-1][rows-j-1] #left
@@ -15,7 +14,7 @@ def rotateMatrix(_arr: list[list[int]]) -> None:
     _col = int(len(_arr[0]) / 2)
     for i in range(0,_row):
         for j in range(0,_col):
-            swap4(_arr,i,j,len(_arr),len(_arr[0]))
+            swap4(_arr,i,j,len(_arr))
 
 rows, cols = (4, 4)
 matrix=[]
