@@ -12,11 +12,11 @@ def isPalindromePerm(s: str) -> bool:
             charCounter[c] = 1
         else:
             charCounter[c] += 1
-    
+
     oddCharCount: int = 0
     for el in charCounter:
         if (charCounter[el] % 2) == 1:
-            oddCharCount+=1
+            oddCharCount += 1
     return False if oddCharCount > 1 else True
 
 
