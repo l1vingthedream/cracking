@@ -46,8 +46,6 @@ class LinkedList:
                 node.next = node.next.next
             node = node.next
 
-    # TODO make a delete_node method
-
 
 ll: LinkedList = LinkedList([2, 5, 1, 2, 8, 4, 3, 6, 3, 7])
 print(ll)
