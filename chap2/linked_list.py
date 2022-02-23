@@ -1,3 +1,6 @@
+import random
+
+
 class Node:
     def __init__(self, value, next_node=None) -> None:
         self.value = value
@@ -54,3 +57,7 @@ class LinkedList:
             if n.next.value == value:
                 n.next = n.next.next
             n = n.next
+
+    @classmethod
+    def generate(cls, node_count, min_value, max_value):
+        return cls(random.choices(range(min_value, max_value), k=node_count))
