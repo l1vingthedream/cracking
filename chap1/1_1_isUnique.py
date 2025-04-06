@@ -2,6 +2,7 @@
 What if you cannot use additional data structures?
 '''
 
+
 def isUnique(word: str) -> bool:
     charCount: dict[str, int] = {}
     for c in word:
