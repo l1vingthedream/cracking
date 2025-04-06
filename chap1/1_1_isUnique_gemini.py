@@ -17,13 +17,13 @@ def has_unique_chars(input_string):
 
     # Iterate through each character using index i
     for i in range(n):
-        # Compare the character at index i with all subsequent characters (index j)
+        # Compare the character at index i with all subsequent chars
         for j in range(i + 1, n):
-            # If we find the same character later in the string, it's not unique
+            # If same char later in the string, not unique
             if input_string[i] == input_string[j]:
                 return False
 
-    # If the nested loops complete without finding any duplicates, the string is unique
+    # If nested loops complete without duplicates, is unique
     return True
 
 
