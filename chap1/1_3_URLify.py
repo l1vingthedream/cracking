@@ -2,7 +2,7 @@
 '''
 
 
-def toUrl(s: list(), strLength: int) -> str:
+def toUrl(s: list[str], strLength: int) -> str:
     i = strLength - 1
     j = len(s) - 1
     while i >= 0 and j >= 0:
